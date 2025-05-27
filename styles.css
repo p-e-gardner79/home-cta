@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100%;
+    box-sizing: border-box; /* Add this for better layout control */
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+  font-size:2.5rem;
+}
+
+a {
+    text-decoration:none;
+    color:#f0f2f2;
+    font-size:1rem;
+}
+
+/* BANNER CSS */
+
+.banner-container {
+  background: #f0f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* This centers the banner-width div */
+}
+
+.banner-width {
+  width: 1140px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between; /* This pushes header-content and header-image to the ends */
+  padding: 20px;
+  gap:20px;
+}
+
+.banner p {
+  color: #183850;
+}
+
+.banner h1 {
+  color: #183850;
+}
+
+.header-image {
+  /* These styles are correctly applied to center the image *within* header-image */
+  display: flex;
+  justify-content: center; /* Horizontally centers the image */
+  align-items: center; /* Vertically centers the image */
+  /* If you want to visualize this div, add a background:
+  background-color: lightblue; */
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-content {
+  max-width: 60%;
+}
+
+/* HOME CTA CSS*/
+
+.container {
+  background: #f0f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* This centers the banner-width div */
+}
+
+.home-ctas {
+padding:30px 20px 30px 20px;
+}
+
+.container h1 {
+  text-align:center;
+  color:#183850;
+}
+
+.container p {
+  text-align:center;
+  color:#183850;
+}
+
+.home-ctas-blocks {
+display:flex;
+justify-content:space-around;
+gap:20px;
+padding:20px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 850px) {
+  .home-ctas-blocks {
+    flex-direction:column;
+  }
+}
+
+.cta-block {
+  border: solid 1px #183850;
+  border-radius: 10px;
+  padding:0px 20px 20px 20px;
+  width:100%;
+  text-align:center;
+  background-color:#183850;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+}
+
+.cta-block h3 {
+  
+  color:#f0f2f2;
+}
+
+.cta-block p {
+  
+  color:#f0f2f2;
+}
+
+.cta-block .material-symbols-outlined {
+  padding-top:20px;
+  font-size:1.6rem;
+  color:#82cff4;
+}
+
+.home-ctas-buttons {
+  padding:20px 20px 20px 20px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.home-ctas-buttons button {
+  background-color:#183850;
+  width:150px;
+  height:50px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  color:#f0f2f2;
+  font-weight:bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-ctas-buttons button:hover {
+  background-color:#82cff4;
+  color:#183850;
+  box-shadow: none;
+}
